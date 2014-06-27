@@ -19,7 +19,7 @@ object Application extends Controller {
     }
   }
 
-  def redirect(id: String) = Action.async { implicit request =>
+  def redirect(id: String) = Action.async {
     //look up the url based on the id, if we get something, then redirect, else 404
       future {
         val url = Shortener.getUrl(id)
