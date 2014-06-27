@@ -1,4 +1,4 @@
-This is your new Play application
+Link Shortener
 =================================
 
-This file will be packaged with your application, when using `activator dist`.
+A simple link shortener application using Scala Play, Redis and AngularJS with Bootrap.
