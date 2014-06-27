@@ -6,10 +6,9 @@ import services.Shortener
 import scala.concurrent._
 
 object Application extends Controller {
-
   implicit val context = scala.concurrent.ExecutionContext.Implicits.global
 
-  def index = BadRequest("Not Found")
+  def index = Action {BadRequest("Not Found") }
 
   def shorten = Action.async { implicit request =>
     val json = request.body.asJson.get
